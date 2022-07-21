@@ -72,6 +72,7 @@ section {
     width: 80%;
 }
 
+
 /* Blog  */
 .blog .container,
 .upcoming-match .container {
@@ -136,6 +137,10 @@ section {
     width: 40%;
     margin: 1rem 0;
     color: rgba(22, 22, 22, 0.7);
+}
+
+.view-btn {
+    display: none;
 }
 
 /* Upcoming Match */
@@ -232,7 +237,7 @@ footer hr {
 
     .home .col p {
         margin: auto;
-        text-overflow: ellipsis;
+        width: 100%;
     }
 
     .blog .container,
@@ -297,13 +302,17 @@ footer hr {
         border: 1px solid #E8E8E8;
     }
 
-    .blog .col:nth-child(8),
-    .blog .col:nth-child(9),
-    .blog .col:nth-child(10),
-    .upcoming-match .col:nth-child(8),
-    .upcoming-match .col:nth-child(9),
-    .upcoming-match .col:nth-child(10) {
+    .blog .col:nth-child(10) {
         display: none;
+    }
+
+    /* Added a view button only for tablet devices */
+    .view-btn {
+        max-width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
     }
 
 
